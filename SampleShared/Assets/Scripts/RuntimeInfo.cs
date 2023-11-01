@@ -51,7 +51,7 @@ namespace Microsoft.MixedReality.OpenXR.Sample
         private static string GetDisplayInfo()
         {
             var displays = new List<XRDisplaySubsystem>();
-            SubsystemManager.GetInstances(displays);
+            SubsystemManager.GetSubsystems(displays);
 
             if (displays.Count == 0)
             {

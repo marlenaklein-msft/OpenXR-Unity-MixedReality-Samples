@@ -66,7 +66,7 @@ namespace Microsoft.MixedReality.OpenXR.Sample
             }
 
             List<XRDisplaySubsystem> xrDisplaySubsystems = new List<XRDisplaySubsystem>();
-            SubsystemManager.GetInstances(xrDisplaySubsystems);
+            SubsystemManager.GetSubsystems(xrDisplaySubsystems);
             foreach (XRDisplaySubsystem xrDisplaySubsystem in xrDisplaySubsystems)
             {
                 // If a running XR display is found, assume an XR headset is attached.
